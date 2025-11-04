@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlace Pro Tech - Tu Puente de Experiencia Confiable en Bogotá</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Modal de Bienvenida y Segmentación -->
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <h2>¡Bienvenido a Enlace Pro Tech!</h2>
+            <p>Selecciona tu perfil para comenzar:</p>
+            <div class="modal-buttons">
+                <button class="modal-btn pyme-btn" onclick="closeModal('pyme')">
+                    <span class="btn-icon">🏢</span>
+                    Soy una Pyme
+                </button>
+                <button class="modal-btn talent-btn" onclick="closeModal('talent')">
+                    <span class="btn-icon">👨‍💻</span>
+                    Soy Talento Joven
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegación Principal -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">🔗</span>
+                    <span class="logo-text">Enlace Pro Tech</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#como-funciona">Cómo Funciona</a></li>
+                    <li><a href="#para-pymes">Para Pymes</a></li>
+                    <li><a href="#para-talento">Para Talento</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Enlace Pro Tech: Talento Verificado para Proyectos en Bogotá
+                </h1>
+                <p class="hero-subtitle">
+                    Tu Puente de Experiencia Confiable que conecta Pymes con el mejor talento tecnológico joven (18-30 años)
+                </p>
+                <div class="hero-benefits">
+                    <div class="benefit">
+                        <span class="benefit-icon">⚡</span>
+                        <span>Conexión en máximo 5 días hábiles</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">✓</span>
+                        <span>Talento 100% verificado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de CTAs Principales -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-cards">
+                <!-- CTA para Pymes -->
+                <div class="cta-card pyme-card" id="para-pymes">
+                    <div class="card-icon">🏢</div>
+                    <h2>¿Eres una Pyme?</h2>
+                    <p class="card-description">
+                        Encuentra talento tecnológico verificado y flexible para tus proyectos. 
+                        Sin largos procesos de selección, sin riesgos.
+                    </p>
+                    <ul class="card-benefits">
+                        <li>✓ Talento pre-calificado y verificado</li>
+                        <li>✓ Conexión en máximo 5 días hábiles</li>
+                        <li>✓ Flexibilidad según tus necesidades</li>
+                        <li>✓ Soporte durante todo el proceso</li>
+                    </ul>
+                    <button class="cta-button pyme-button">
+                        Publica tu Proyecto Ahora
+                    </button>
+                </div>
+
+                <!-- CTA para Talento -->
+                <div class="cta-card talent-card" id="para-talento">
+                    <div class="card-icon">👨‍💻</div>
+                    <h2>¿Eres Talento Joven?</h2>
+                    <p class="card-description">
+                        Consigue tu primera experiencia profesional significativa con empresas reales. 
+                        Seguridad contractual garantizada.
+                    </p>
+                    <ul class="card-benefits">
+                        <li>✓ Acceso a proyectos reales en Pymes</li>
+                        <li>✓ Contratos formales y seguros</li>
+                        <li>✓ Construye tu experiencia profesional</li>
+                        <li>✓ Plataforma de verificación confiable</li>
+                    </ul>
+                    <button class="cta-button talent-button">
+                        Regístrate y Aplica Gratis
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Cómo Funciona -->
+    <section class="how-it-works" id="como-funciona">
+        <div class="container">
+            <h2 class="section-title">¿Cómo Funciona?</h2>
+            <p class="section-subtitle">
+                Proceso simple y eficiente en 3 pasos
+            </p>
+            <div class="steps">
+                <!-- Paso 1 -->
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Registro y Verificación</h3>
+                    <p>
+                        Las Pymes publican sus proyectos y el talento joven crea su perfil. 
+                        Realizamos una calificación rigurosa para garantizar la calidad.
+                    </p>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Emparejamiento Inteligente</h3>
+                    <p>
+                        Nuestro sistema realiza un match eficiente entre las necesidades de las Pymes 
+                        y las habilidades del talento verificado.
+                    </p>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Conexión y Seguimiento</h3>
+                    <p>
+                        Facilitamos la conexión en máximo 5 días hábiles y brindamos soporte 
+                        durante todo el proceso de colaboración.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Enlace Pro Tech</h3>
+                    <p>Tu Puente de Experiencia Confiable en Bogotá</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📍 Bogotá, Colombia</p>
+                    <p>📧 contacto@enlaceprotech.com</p>
+                    <p>📱 +57 (1) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#para-pymes">Para Pymes</a></li>
+                        <li><a href="#para-talento">Para Talento</a></li>
+                        <li><a href="#como-funciona">Cómo Funciona</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Enlace Pro Tech. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- STYLES.CSS -->
+<style>
+/* ==================== VARIABLES Y RESET ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2563eb;
+    --primary-dark: #1e40af;
+    --secondary-color: #10b981;
+    --secondary-dark: #059669;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-light: #f9fafb;
+    --white: #ffffff;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --border-radius: 12px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==================== MODAL DE BIENVENIDA ==================== */
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    max-width: 500px;
+    text-align: center;
+    animation: slideUp 0.4s ease-out;
+}
+
+.modal-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.modal-content p {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.modal-btn {
+    flex: 1;
+    min-width: 180px;
+    padding: 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-icon {
+    font-size: 40px;
+}
+
+.pyme-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.pyme-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.talent-btn {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.talent-btn:hover {
+    background-color: var(--secondary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ==================== NAVEGACIÓN ==================== */
+.navbar {
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.logo-icon {
+    font-size: 32px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-dark);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--white);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.95;
+}
+
+.hero-benefits {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.benefit-icon {
+    font-size: 24px;
+}
+
+/* ==================== CTA SECTION ==================== */
+.cta-section {
+    padding: 80px 0;
+    background-color: var(--bg-light);
+}
+
+.cta-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+}
+
+.cta-card {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease;
+}
+
+.cta-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.cta-card h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.card-description {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 25px;
+}
+
+.card-benefits {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.card-benefits li {
+    padding: 10px 0;
+    color: var(--text-dark);
+    font-size: 15px;
+}
+
+.cta-button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pyme-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.pyme-button:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.02);
+}
+
+.talent-button {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.talent-button:hover {
+    background-color: var(--secondary-dark);
+    transform: scale(1.02);
+}
+
+/* ==================== HOW IT WORKS SECTION ==================== */
+.how-it-works {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: var(--text-light);
+    margin-bottom: 60px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.step {
+    text-align: center;
+    padding: 30px;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.step h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.step p {
+    font-size: 16px;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+    background-color: var(--text-dark);
+    color: var(--white);
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: var(--white);
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+.footer-section a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.8;
+}
+
+/* ==================== ANIMACIONES ==================== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: var(--shadow);
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .cta-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-buttons {
+        flex-direction: column;
+    }
+
+    .modal-btn {
+        min-width: 100%;
+    }
+}
+</style>
+
+<!-- SCRIPT.JS -->
+<script>
+// ==================== MODAL DE BIENVENIDA ====================
+// Muestra el modal al cargar la página
+window.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('welcomeModal');
+    modal.style.display = 'flex';
+});
+
+// Función para cerrar el modal y guardar la selección del usuario
+function closeModal(userType) {
+    const modal = document.getElementById('welcomeModal');
+    modal.style.display = 'none';
+    
+    // Almacenar el tipo de usuario seleccionado
+    sessionStorage.setItem('userType', userType);
+    
+    // Opcional: Scroll automático a la sección correspondiente
+    if (userType === 'pyme') {
+        setTimeout(() => {
+            document.getElementById('para-pymes').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }, 300);
+    } else if (userType === 'talent') {
+        setTimeout(() => {
+            document.getElementById('para-talento').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }, 300);
+    }
+}
+
+// ==================== MENÚ RESPONSIVE ====================
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
+
+// Toggle del menú hamburguesa
+menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    
+    // Animación del icono hamburguesa
+    const spans = menuToggle.querySelectorAll('span');
+    if (navMenu.classList.contains('active')) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+    } else {
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+    }
+});
+
+// Cerrar menú al hacer clic en un enlace
+navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        const spans = menuToggle.querySelectorAll('span');
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+    });
+});
+
+// ==================== SMOOTH SCROLL ====================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// ==================== BOTONES CTA ====================
+// Funcionalidad para los botones principales de CTA
+document.querySelectorAll('.cta-button').forEach(button => {
+    button.addEventListener('click', (e) => {
+        const isPymeButton = e.target.classList.contains('pyme-button');
+        const buttonType = isPymeButton ? 'Pyme' : 'Talento';
+        
+        // Aquí se conectaría con el sistema de registro/backend
+        alert(`¡Gracias por tu interés! El sistema de registro para ${buttonType} estará disponible próximamente.`);
+        
+        // En producción, esto redirigiría a:
+        // window.location.href = isPymeButton ? '/registro-pyme' : '/registro-talento';
+    });
+});
+
+// ==================== ANIMACIONES AL SCROLL ====================
+// Observador para animar elementos cuando entran en el viewport
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Aplicar animación a las tarjetas y pasos
+document.querySelectorAll('.cta-card, .step').forEach(element => {
+    element.style.opacity = '0';
+    element.style.transform = 'translateY(30px)';
+    element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(element);
+});
+
+// ==================== CONSOLA DE DEPURACIÓN ====================
+console.log('%c¡Bienvenido a Enlace Pro Tech! 🔗', 'color: #2563eb; font-size: 20px; font-weight: bold;');
+console.log('Plataforma Beta - Versión 1.0');
+console.log('Desarrollado con HTML5, CSS3 y JavaScript puro');
+</script>
